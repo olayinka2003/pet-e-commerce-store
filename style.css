@@ -1,0 +1,304 @@
+*,::before,::after{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+#container{
+    height: 100vh;
+    background: #fceed5;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+header{
+    max-width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+#headerimg{
+    position: absolute;
+    top:-2rem ;
+    left: -0.4rem;
+    z-index: -1;
+}
+
+nav{  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.hamburger{
+    display: none;
+}
+
+nav #hleft{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+nav #hleft a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #003459;
+}
+#hlinks{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+nav #hright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+#hright div{
+    display: flex;
+    background: white;
+    border-radius: 10rem;
+    overflow: hidden;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav #hright input{
+    padding: 1rem ;
+    border: none;
+    align-items: center;
+    width: 80%;
+    outline: none;
+}
+#inputimg{
+padding-left: 1rem;
+}
+
+nav #hright button{
+    padding: 1rem 2rem;
+    border-radius: 5.7rem;
+    outline: none;
+    border: 0.1rem solid gray;
+    background:#003459 ;
+    color: white;
+    cursor: pointer;  
+}
+
+#headercontent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: 0 auto; 
+}
+
+#headercontent img{
+    width: 60rem;
+}
+
+#heroleft{
+max-width:40%; 
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 1.5rem;
+margin-top: 50px;
+position: relative;
+z-index: 2;
+}
+#heroleft h1{
+    font-size: 4rem;
+    font-weight: 800;
+    color: #002A48;
+}
+
+#rectimg{
+    position: absolute;
+}
+
+#heroleft p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2rem;
+    color: #242b33;
+}
+
+#heroleft h2{ 
+    font-size: 3rem;
+    font-weight: 600;
+    color: #002A48;
+}
+.rect8{
+    position: absolute;
+    left: -12rem;
+    bottom: -1rem;
+    z-index: -1;
+} 
+
+.Rect6{
+    position: absolute;
+    z-index: -1;
+    width: 2rem;
+
+}
+
+ 
+#heroleft #btn{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+#heroleft .Rectangle3{
+    width: 6rem;
+    position: absolute;
+    top: -1rem;
+    left: -1.5rem;
+    z-index: -1;
+}
+
+#heroright{
+    max-width:60% ;
+    position: relative;
+    z-index: 2;
+    top: 10rem;
+    /* overflow: hidden; */
+}
+
+
+#heroright .rect{
+    position: absolute;
+    left: -4rem;
+    bottom: -8.5rem;;
+    z-index: -1;
+}
+
+#heroright .rect1{
+    position: absolute;
+    left: 0;
+    bottom: -4rem;
+    z-index: -1;
+}
+#petcontainer{
+    max-width: 100%;
+    display: grid;   
+    grid-template-rows: 1fr auto;
+    gap: 1rem;
+    /* padding: 1rem 0 1rem 0; */
+
+}
+
+#whatsnew{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 3rem;
+}
+
+#whatsnew h3{
+    font-size: 1.5rem;
+}
+#whatsnew p{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.whatsnewlink{
+    border: 0.2rem solid #00171f;
+    padding: 1rem;
+    border-radius: 10rem;
+    background: white;
+}
+.whatsnewlink a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #003459;
+}
+#whatsnew .top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+#petslide{
+    max-width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2rem;
+
+}
+
+.petcard{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 1.5rem;
+    /* padding: 1rem; */
+    /* border: 0.9rem solid white; */
+    border-radius: 2rem;
+    background: #FDFDFD;
+}
+.petcard h4 {
+    color: #00171f;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.petcard h5{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #00171f;
+}
+
+.petcard p{
+    color: #667479;
+    font-weight: 700;
+}
+.petcard img{
+    /* width: 20rem; */
+    /* border: 0.5rem solid white; */
+    /* border-radius: 2rem; */
+}
+.petcard div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+
+@media (max-width:768px){
+    #hlinks, #hright input, .dropdown, .joinbtn{
+        display:none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+}
