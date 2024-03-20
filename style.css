@@ -178,6 +178,27 @@ nav #hright button {
   left: -1.5rem;
   z-index: -1;
 }
+.toprect{
+  position: absolute;
+  height: 1.289rem;
+  top: 4rem;
+  right: 17rem;
+}
+.bottomrect{
+  position: absolute;
+  height: 1.719rem;
+  top: 7rem;
+  right: 17rem;
+  /* left: 12.5rem; */
+}
+
+.bottomrect2{
+  position: absolute;
+  height: 1.342rem;
+  top: 7.5rem;
+  right: 17rem;
+  /* left: 12.5rem; */
+}
 
 #heroright {
   max-width: 60%;
@@ -665,6 +686,7 @@ footer p{
   font-weight: 500;
   font-size: 1.4rem;
 }
+
 
 @media (max-width: 768px) {
   #hlinks,
