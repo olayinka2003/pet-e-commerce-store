@@ -11,134 +11,136 @@ html {
   font-size: 62.5%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
 header {
-    max-width: 100%;
-    position: relative;
-    z-index: 2;
-  }
-
+  max-width: 100%;
+  position: relative;
+  z-index: 2;
+}
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem 0;
-    max-width: 80%;
-    margin: 0 auto;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+  max-width: 80%;
+  margin: 0 auto;
+}
 
-  
 .hamburger {
-    display: none;
-  }
-  
+  display: none;
+}
+
 nav #hleft {
-    display: flex;
-    gap: 4rem;
-    align-items: center;
-  }
-  
-  nav #hleft a {
-    text-decoration: none;
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: #003459;
-  }
-  #hlinks {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-  }
-  
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+nav #hleft a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #003459;
+}
+#hlinks {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
 nav #hright {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-  }
-  #hright div {
-    display: flex;
-    background: white;
-    border-radius: 10rem;
-    overflow: hidden;
-    gap: 1rem;
-    align-items:center;
-    justify-content: space-between;
-  }
-  
-  nav #hright input {
-    padding: 1rem;
-    border: none;
-    align-items: center;
-    width: 80%;
-    outline: none;
-  }
-  #inputimg {
-    padding-left: 1rem;
-  }
-  
-  nav #hright button {
-    padding: 1rem 2rem;
-    border-radius: 5.7rem;
-    outline: none;
-    border: 0.1rem solid gray;
-    background: #003459;
-    color: white;
-    cursor: pointer;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+#hright div {
+  display: flex;
+  background: white;
+  border-radius: 10rem;
+  overflow: hidden;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  .filepath{
-    width: 80%;
-    margin: auto;
-    margin-top: 2rem;
-  }
-  .pathlink{
-    display: flex;
-    gap: 2rem;
-  }
-  .pathlink a{
-    text-decoration: none;
-    color: #667479;
-    font-weight: 500;
-    font-size: 1.4rem;
-  }
+nav #hright input {
+  padding: 1rem;
+  border: none;
+  align-items: center;
+  width: 80%;
+  outline: none;
+}
+#inputimg {
+  padding-left: 1rem;
+}
 
-  #categorybanner{
-    background: linear-gradient(102.87deg, #FCEED5 6.43%, #FCEED5 78.33%, #FFE7BA 104.24%);
-    width: 80%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 7rem;
-    overflow: hidden;
-    border-radius: 1rem;
-    margin-top: 1rem;
-  }
-  .bannerleft{
-    width: 60%;
-    z-index: 2;
-  }
-  .bannerleft img{
-    width: 100%;
-    margin-bottom: -0.2rem;
-  }
-  .bannerright{
-    width: 40%;
+nav #hright button {
+  padding: 1rem 2rem;
+  border-radius: 5.7rem;
+  outline: none;
+  border: 0.1rem solid gray;
+  background: #003459;
+  color: white;
+  cursor: pointer;
+}
 
-  }
-  .categoryrect{
-    position: absolute;
-    left: -30rem;
-    top: -4.5em;
-    z-index: -1;
-  }
-  
-.bannerright h1{
+.filepath {
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+}
+.pathlink {
+  display: flex;
+  gap: 2rem;
+}
+.pathlink a {
+  text-decoration: none;
+  color: #667479;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+#categorybanner {
+  background: linear-gradient(
+    102.87deg,
+    #fceed5 6.43%,
+    #fceed5 78.33%,
+    #ffe7ba 104.24%
+  );
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+.bannerleft {
+  width: 60%;
+  z-index: 2;
+}
+.bannerleft img {
+  width: 100%;
+  margin-bottom: -0.2rem;
+}
+.bannerright {
+  width: 40%;
+}
+.categoryrect {
+  position: absolute;
+  left: -30rem;
+  top: -4.5em;
+  z-index: -1;
+}
+
+.bannerright h1 {
   font-size: 3rem;
   font-weight: 800;
   color: white;
@@ -149,14 +151,14 @@ nav #hright {
   font-weight: 600;
   color: white;
 }
-.bannerText p{
+.bannerText p {
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 2rem;
   color: white;
   text-align: end;
 }
-.bannerText{
+.bannerText {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -166,25 +168,24 @@ nav #hright {
   position: relative;
   padding-right: 4rem;
 }
-  .bannerText div{
+.bannerText div {
   display: flex;
   gap: 1rem;
-  }
-  
-.explore{
-  padding:0.5em 1.5em ;
+}
+
+.explore {
+  padding: 0.5em 1.5em;
   background: white;
   color: #003459;
   border-radius: 10rem;
   border: none;
   cursor: pointer;
-
 }
 #play {
   display: flex;
   gap: 1rem;
   align-items: center;
-  padding:0.5em 0.75em;
+  padding: 0.5em 0.75em;
   border-radius: 10rem;
   border: 1px solid white;
   color: white;
@@ -194,7 +195,7 @@ nav #hright {
   background-color: transparent;
 }
 
-#dogcategories{
+#dogcategories {
   width: 80%;
   margin: auto;
   display: grid;
@@ -202,7 +203,6 @@ nav #hright {
   grid-gap: 1rem;
   margin-top: 4rem;
 }
-
 
 #petcontainer {
   /* max-width: 100%; */
@@ -303,31 +303,18 @@ nav #hright {
   /* border: 0.5rem solid white; */
   /* border-radius: 2rem; */
 }
-.filter{
+.filter {
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
   gap: 1rem;
 }
-.filter h2{
+.filter h2 {
   margin-top: 2rem;
   color: #003459;
 }
 
-.gender{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1rem;
-  border-bottom: 1px solid  rgb(238, 233, 233);
-  padding: 1rem;
-}
-.gender span{
-display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-.color{
+.gender {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -335,68 +322,90 @@ display: flex;
   border-bottom: 1px solid rgb(238, 233, 233);
   padding: 1rem;
 }
-.color span{
+.gender span {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
-.price{
+.color {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
-  border-bottom: 1px solid  rgb(238, 233, 233);
+  border-bottom: 1px solid rgb(238, 233, 233);
   padding: 1rem;
 }
-.price div{
+.color span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  border-bottom: 1px solid rgb(238, 233, 233);
+  padding: 1rem;
+}
+.price div {
   display: flex;
   gap: 1rem;
 }
 
-.breed{
+.breed {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
-  border-top: 1px solid  rgb(238, 233, 233);
+  border-top: 1px solid rgb(238, 233, 233);
   padding: 1rem;
 }
-.breed span{
+.breed span {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
- .numlink{
+#pagenum {
+  display: flex;
+  justify-content: center;
+}
+
+.numlink {
   display: flex;
   align-items: center;
   gap: 3rem;
- }
- .numlink a{
+}
+.numlink a {
   text-decoration: none;
   font-weight: 700;
   font-size: 1.8rem;
   color: #002a48;
- }
+}
 
- .numlink .one{
-  background:  #002a48;
+.numlink .one {
+  background: #002a48;
   color: white;
   padding: 0.6rem 1.3rem 0.4rem 1.3rem;
   border-radius: 0.8rem;
- }
+}
 
- 
-#bottomcontainer{
+#bottomcontainer {
   width: 100%;
-  background: linear-gradient(102.87deg, #FCEED5 6.43%, #FCEED5 78.33%, #FFE7BA 104.24%);
+  background: linear-gradient(
+    102.87deg,
+    #fceed5 6.43%,
+    #fceed5 78.33%,
+    #ffe7ba 104.24%
+  );
   padding-top: 5rem;
   margin-top: 2rem;
   border-radius: 2rem;
   /* height: 80vh; */
 }
 
-#register{
+#register {
   display: flex;
   justify-content: space-between;
   width: 80%;
@@ -406,30 +415,29 @@ display: flex;
   gap: 2rem;
   border-radius: 1.6rem;
 }
-#register h1{
-width: 40%;
-color: white;
-font-size: 1.8rem;
-font-weight: 700
-;
+#register h1 {
+  width: 40%;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
 }
-#register #sign{
-width: 60%;
-display: flex;
-align-items: center;
-gap: 0.5rem;
-background: white;
-padding: 1rem;
-border-radius: 1rem;
+#register #sign {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 1rem;
 }
-#register input{
+#register input {
   width: 100%;
   padding: 1.2rem;
   border-radius: 1rem;
   border: 1px solid gray;
   outline: none;
 }
-#register button{
+#register button {
   width: 20rem;
   background: #003459;
   color: white;
@@ -438,7 +446,7 @@ border-radius: 1rem;
   padding: 1.4rem 2.8rem 1rem 2.8rem;
   cursor: pointer;
 }
-#media{
+#media {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -448,22 +456,22 @@ border-radius: 1rem;
   height: 25vh;
   border-bottom: 1px solid;
 }
-#medialinks{
+#medialinks {
   display: flex;
   gap: 6rem;
 }
-#medialinks a{
+#medialinks a {
   text-decoration: none;
   font-size: 1.6rem;
   font-weight: 500;
   color: #003459;
 }
-.mediaimg{
+.mediaimg {
   display: flex;
   align-items: center;
   gap: 4rem;
 }
-footer{
+footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -471,21 +479,17 @@ footer{
   margin: auto;
   padding: 2rem 0;
 }
-#footerlink{
-display: flex;
-gap: 3rem;
+#footerlink {
+  display: flex;
+  gap: 3rem;
 }
-footer p{
+footer p {
   font-weight: 500;
   font-size: 1.4rem;
 }
-#footerlink a{
+#footerlink a {
   text-decoration: none;
   color: #667479;
   font-weight: 500;
   font-size: 1.4rem;
 }
-
-
-
-  
