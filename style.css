@@ -221,10 +221,12 @@ nav #hright button {
   bottom: -4rem;
   z-index: -1;
 }
+
 #petcontainer {
   max-width: 100%;
   display: grid;
-  grid-template-rows: 1fr auto;
+  grid-template-columns: 1fr;
+  /* grid-template-rows: 1fr auto; */
   gap: 1rem;
   /* padding: 1rem 0 1rem 0; */
 }
@@ -304,7 +306,7 @@ nav #hright button {
   font-weight: 700;
 }
 .petcard img {
-  width: 20rem;
+  width: 100%;
   /* border: 0.5rem solid white; */
   /* border-radius: 2rem; */
 }
@@ -588,22 +590,13 @@ nav #hright button {
   color: #00171F;
 }
 
-#bottomcontainer{
-  width: 100%;
-  background: linear-gradient(102.87deg, #FCEED5 6.43%, #FCEED5 78.33%, #FFE7BA 104.24%);
-  padding-top: 5rem;
-  margin-top: 2rem;
-  border-radius: 2rem;
-  /* height: 80vh; */
-}
-
 #register{
   display: flex;
   justify-content: space-between;
   width: 80%;
   margin: auto;
   background: #003459;
-  padding: 3.2rem;
+  padding: 2rem;
   gap: 2rem;
   border-radius: 1.6rem;
 }
@@ -645,13 +638,15 @@ border-radius: 1rem;
   align-items: center;
   width: 80%;
   margin: auto;
-  padding-top: 4rem;
-  height: 25vh;
+  /* height: 10vh; */
+  padding: 1.5rem 0;
   border-bottom: 1px solid;
 }
 #medialinks{
   display: flex;
   gap: 6rem;
+  align-items: center;
+  justify-content: center;
 }
 #medialinks a{
   text-decoration: none;
@@ -666,15 +661,24 @@ border-radius: 1rem;
 }
 footer{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  margin: auto;
-  padding: 2rem 0;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  background: linear-gradient(102.87deg, #FCEED5 6.43%, #FCEED5 78.33%, #FFE7BA 104.24%);
+  margin-top: 2rem;
+  border-radius: 2rem;
+  padding: 2rem;
 }
 #footerlink{
 display: flex;
 gap: 3rem;
+}
+#footerdown{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
 }
 footer p{
   font-weight: 500;
@@ -689,6 +693,10 @@ footer p{
 
 
 @media (max-width: 768px) {
+  body{
+    /* padding: 1rem; */
+    max-width: 768px;
+  }
   #hlinks,
   #hright input,
   .dropdown,
@@ -699,4 +707,211 @@ footer p{
   .hamburger {
     display: block;
   }
+  #headercontent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #heroleft{
+    width: 100%;
+  }
+  #heroright{
+    width: 100%;
+  }
+  
+#petcontainer {
+  display: grid;
+  /* flex-direction: column; */
+  width: 100%;
+  grid-template-columns: 1fr;
+  /* grid-template-rows: 1fr auto; */
+  gap: 1rem;
+  /* padding: 1rem 0 1rem 0; */
+}
+
+#whatsnew {
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 1rem 0 1rem 3rem; */
+}
+
+#whatsnew h3 {
+  font-size: 1.5rem;
+}
+#whatsnew p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.whatsnewlink {
+  display: none;
+}
+
+#whatsnew .top {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+#petslide {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+
+.petcard {
+  max-width: 100%;
+  /* width: 47%; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 1.5rem;
+  border: 0.1rem solid white;
+  border-radius: 2rem;
+  background: #fdfdfd;
+  padding: 1rem;
+  box-shadow: 0px 4px 28px -2px #00000014;
+}
+.petcard h4 {
+  color: #00171f;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.petcard h5 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #00171f;
+}
+
+.petcard p {
+  color: #667479;
+  font-weight: 700;
+}
+.petcard img {
+  width: 100%;
+  /* border: 0.5rem solid white; */
+  /* border-radius: 2rem; */
+}
+.petcard div {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+#bannerone{
+  max-width: 100%;
+}
+#bannerleft{
+  max-width: 100%;
+}
+#bannerright{
+  max-width: 100%;
+}
+#petsellers{
+  display: none;
+}
+#bannertwo{
+  display: none;
+}
+#petknowledge{
+  max-width: 100%;
+}
+.knowledgetop{
+  max-width: 100%;
+}
+
+.knowledgeslide{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap:1rem;
+
+}
+.knowledgecard{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  box-shadow: 0px 4px 28px -2px #00000014;
+}
+
+
+
+
+   
+footer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#register{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#register h1{
+  width: 100%;
+  font-size: 1.5rem;
+}
+#register #sign{
+  width: 100%;
+}
+#sign{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#sign button{
+  width: 100%;
+}
+#media img{
+  width: 100%;
+}
+#media{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#medialinks{
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+#medialinks a{
+  font-size: 1rem;
+}
+.mediaimg{
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.mediaimg img{
+  width: 0.5rem;
+}
+#footerdown{
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+}
+#footerlink a{
+  font-size: 1rem;
+}
+#footerdown p{
+  font-size: 1rem;
+}
+
 }
