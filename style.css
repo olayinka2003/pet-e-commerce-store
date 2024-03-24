@@ -17,7 +17,7 @@ body {
 }
 
 #container {
-  height: 100vh;
+  /* height: 100vh; */
   background: #fceed5;
   overflow: hidden;
   position: relative;
@@ -178,6 +178,7 @@ nav #hright button {
   left: -1.5rem;
   z-index: -1;
 }
+
 .toprect{
   position: absolute;
   height: 1.289rem;
@@ -205,7 +206,6 @@ nav #hright button {
   position: relative;
   z-index: 2;
   top: 10rem;
-  /* overflow: hidden; */
 }
 
 #heroright .rect {
@@ -707,17 +707,84 @@ footer p{
   .hamburger {
     display: block;
   }
+  
+#container {
+  width: 100%;
+  height: 100vh;
+  background: #fceed5;
+  /* overflow: hidden; */
+  position: relative;
+  z-index: 2;
+}
   #headercontent{
     width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
   }
   #heroleft{
-    width: 100%;
+    max-width: 100%;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
   }
+
+  #heroleft p{
+    text-align: left;
+  }
+  
+#heroleft div{
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#play{
+width: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.explore{
+width: 50%;
+padding: 1.3rem;
+}
   #heroright{
-    width: 100%;
+    max-width: 100%;
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: center;
   }
+  
+#heroright .rect {
+  display: none;
+}
+
+#heroright .rect1 {
+  display: none;
+}
+
+.toprect{
+  display: none;
+}
+.bottomrect{
+  display: none;
+}
+
+.bottomrect2{
+  display: none;
+}
+.Rectangle3{
+  display: none;
+}
+.rect8{
+  display: none;
+}
   
 #petcontainer {
   display: grid;
@@ -810,13 +877,40 @@ footer p{
 }
 #bannerone{
   max-width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.bannerrect{
+  display: none;
+}
+.bannerrect2{
+  display: none;
 }
 #bannerleft{
   max-width: 100%;
+  display: flex;
+  justify-content: center;
 }
 #bannerright{
+  padding: 1rem;
   max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background:#FCEED5;
 }
+#bannerright p{
+  text-align: center;
+  line-height: 2rem;
+}
+#btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
 #petsellers{
   display: none;
 }
@@ -844,7 +938,9 @@ footer p{
   padding: 1rem;
   box-shadow: 0px 4px 28px -2px #00000014;
 }
-
+#petcontainer2{
+  display: none;
+}
 
 
 

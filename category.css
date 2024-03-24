@@ -261,6 +261,7 @@ nav #hright button {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
 }
+ 
 
 .petcard {
   display: flex;
@@ -273,6 +274,7 @@ nav #hright button {
   background: #fdfdfd;
   padding: 1rem;
   box-shadow: 0px 4px 28px -2px #00000014;
+  height: auto;
 }
 
 .petcard div {
@@ -300,6 +302,7 @@ nav #hright button {
 
 .petcard img {
   width: 100%;
+  height: auto;
   /* border: 0.5rem solid white; */
   /* border-radius: 2rem; */
 }
@@ -594,6 +597,12 @@ footer p {
     display: flex;
     justify-content: center;
   }
+  
+#dogcategories {
+  width: 100%;
+  margin-top: 4rem;
+}
+
 
   .filter {
     display: none;
@@ -609,25 +618,37 @@ footer p {
   .whatsnewlink {
     display: none;
   }
-  #petslide {
+
+  #petcontainer{
+    width: 100%;
+  }
+  #petslide{
     width: 100%;
     display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
+   
   }
+  /* .petcard{
+    width: 100%;
+    height: auto;
+  } */
+ 
 
   .petcard div {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    /* justify-content: flex-end; */
+    align-items: flex-start;
     gap: 1rem;
     max-width: 100%;
   }
   .petcard {
     max-width: 100%;
+    height: auto;
   }
   .petcard img {
     width: 100%;
+    height: auto;
   }
   #dogcategories {
     width: 100%;
@@ -639,19 +660,19 @@ footer p {
     display: flex;
     /* background: #000; */
     /* justify-content: center; */
-    width: 100%;
+    width: 100%
   }
   #pagenum .numlink {
     display: flex;
     justify-content: center;
     width: 100%;
   }
+  
   #petcontainer {
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    /* display: grid; */
-    /* grid-template-columns: 1fr; */
+
   }
 
   footer {
