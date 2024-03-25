@@ -245,6 +245,9 @@ table{
 
   border-collapse: collapse;
 }
+table p{
+  padding-left: 1rem;
+}
 
 td, th {
   font-size: 1.4rem;
@@ -254,7 +257,7 @@ td, th {
   color: #667479;
 }
 td{
-  padding-left: 10rem;
+  /* padding-left: 10rem; */
 }
 #customer{
   width: 80%;
