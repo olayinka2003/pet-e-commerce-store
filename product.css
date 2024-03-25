@@ -120,6 +120,14 @@ nav #hright button {
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+.shibascroll::-webkit-scrollbar{
+  background-color: transparent;
+}
+.shibadog img{
+  width: 20%;
 }
   
 

@@ -510,6 +510,11 @@ footer p {
   .joinbtn {
     display: none;
   }
+  
+  #inputimg {
+    padding-left: 0;
+    background: transparent;
+  }
   nav {
     width: 100%;
     display: flex;
