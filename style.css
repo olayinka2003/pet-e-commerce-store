@@ -344,21 +344,36 @@ nav #hright button {
   top: -12rem;
   left: -12rem;
 }
+.bannerrect3{
+  display: none;
+}
 #bannerright {
   display: flex;
   flex-direction: column;
   align-items: end;
   padding-right: 3rem;
   gap: 1rem;
-  max-width: 40%;
+  width: 40%;
   position: relative;
   z-index: 2;
 }
-#bannerright p {
+.query{
+  display: none;
+}
+#banner-text p {
   font-size: 1.1rem;
   font-weight: 500;
   line-height: 1.5rem;
   color: #242b33;
+}
+
+.banner-text{
+  top: 30px;
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 #bannerright #btn {
@@ -406,6 +421,22 @@ nav #hright button {
   border-radius: 10rem;
   background: white;
  
+}
+
+.view{
+  border: 0.2rem solid #00171f;
+  padding: 1rem;
+  border-radius: 10rem;
+  background: white;
+  display: none;
+}
+.view a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #003459;
+  display: flex;
+  align-items: center;
 }
 
 #sellerlink a {
@@ -703,6 +734,10 @@ footer p{
   .joinbtn {
     display: none;
   }
+  #inputimg {
+    padding-left: 0;
+    background: transparent;
+  }
 
   .hamburger {
     display: block;
@@ -759,14 +794,16 @@ padding: 1.3rem;
     top: 0;
     display: flex;
     justify-content: center;
+   
+    
   }
-  
+
 #heroright .rect {
-  display: none;
+  display: block;
 }
 
 #heroright .rect1 {
-  display: none;
+  display: block;
 }
 
 .toprect{
@@ -875,35 +912,99 @@ padding: 1.3rem;
   justify-content: center;
   gap: 1rem;
 }
+
+.view{
+  width: 70%;
+  border: 0.2rem solid #003459;
+  padding: 1rem;
+  border-radius: 10rem;
+  background: white;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+.view a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #003459;
+  display: flex;
+  align-items: center;
+}
+
 #bannerone{
   max-width: 100%;
   display: flex;
   flex-direction: column-reverse;
+  justify-content: space-between;
+  gap: 5rem;
 }
 .bannerrect{
-  display: none;
+  display: block;
 }
 .bannerrect2{
   display: none;
 }
+/* .bannerrect3{
+  display: block;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: -30rem;
+} */
 #bannerleft{
   max-width: 100%;
   display: flex;
   justify-content: center;
 }
+
+
+.bannerrect {
+  position: absolute;
+  left: -15rem;
+  /* left: -0.1rem; */
+  /* bottom: -0.1rem; */
+  z-index: -1;
+  width: 100%;
+}
 #bannerright{
-  padding: 1rem;
-  max-width: 100%;
-  display: flex;
+  /* overflow: hidden; */
+  position: relative;
+  /* padding: 1rem; */
+  width: 100%;
+  /* max-width: 0; */
   flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  background:#FCEED5;
+  padding-right: 0;
+  /* gap: 45rem; */
+  /* z-index: 1; */
+  /* background:#FCEED5; */
+}
+.banner-text-container {
+  position: relative;
+  width: 100%;
+}
+
+.banner-text{
+   position: absolute;
+   top: 30px;
+   text-align: center;
+   flex-direction: column;
+   align-items: center;
+   z-index: 1;
+}
+.query{
+  display: block;
+  margin-top: -35em;
+  width: 100%;
+ 
 }
 #bannerright p{
   text-align: center;
-  line-height: 2rem;
+  line-height: 2.5rem;
+  font-size: 1.2rem;
+  padding: 0 2rem;
 }
+
 #btn{
   display: flex;
   align-items: center;
@@ -917,6 +1018,7 @@ padding: 1.3rem;
 #bannertwo{
   display: none;
 }
+
 #petknowledge{
   max-width: 100%;
 }
@@ -1011,3 +1113,45 @@ footer{
 }
 
 }
+
+@media (max-width:636px){
+  
+.query{
+  display: block;
+  margin-top: -25em;
+  width: 100%;
+ 
+}
+}
+
+@media (max-width:536px){
+  
+.query{
+  display: block;
+  margin-top: -15em;
+  width: 100%;
+ 
+}
+}
+
+@media (max-width:408px){
+  
+.query{
+  display: block;
+  margin-top: -5em;
+  width: 100%;
+ 
+}
+}
+
+@media (max-width:320px){
+  
+.query{
+  display: block;
+  margin-top: -0.5em;
+  width: 100%;
+ 
+}
+}
+
+
