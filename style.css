@@ -37,6 +37,30 @@ header {
   z-index: -1;
 }
 
+.newnav{
+  display: none;
+  margin:auto;
+  width: 80%;
+  border-radius: 1rem;
+  background-color: #00A7E7;
+}
+.newnav ul{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  list-style: none;
+}
+.newnav li:hover{
+  background-color: #FCEED5;
+  width: 50%;
+}
+.newnav a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #003459;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -64,7 +88,7 @@ nav #hleft a {
 }
 #hlinks {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   align-items: center;
 }
 
