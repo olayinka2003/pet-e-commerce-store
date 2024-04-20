@@ -10,8 +10,15 @@ const searchArea = document.querySelector(" #hright input");
 
 menu.addEventListener("click", function(){
   newNav.style.display = "block"
+  newNav.style.transition = "all 5s ease";
   menu.style.display = "none"
+  newNav.classList.toggle("active");
+  console.log("active");
+ 
 })
+
+
+
 
 cancel.addEventListener("click", function(){
   newNav.style.display = "none"
@@ -20,5 +27,9 @@ cancel.addEventListener("click", function(){
 
 searchIcon.addEventListener("click", function(){
   searchArea.style.display = "block"
-  // searchIcon.style.display = "none"
+  searchArea.style.position = "absolute"
+  searchArea.style.right = "0"
+  searchArea.style.width = "300px"
+  searchArea.style.transition = "all 5s ease";
+  searchIcon.style.zIndex = "5"
 })

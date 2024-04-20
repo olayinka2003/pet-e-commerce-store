@@ -41,12 +41,17 @@ header {
   position: absolute;
   top: 0;
   display: none;
-  width: 100%;
+  width: 50%;
   height: 30vh;
   border-radius: 1rem;
-  background-color: #333;
+  background-color: rebeccapurple;
   padding: 10px 0;
   z-index: 12345;
+  /* transform: translateX(-100%); */
+  transition: all 2s ease;
+}
+.newnav.active{
+  display: block;
 }
 .newnav ul{
   display: flex;
@@ -87,6 +92,7 @@ nav {
 .hamburger {
   display: none;
 }
+
 
 nav #hleft {
   display: flex;
